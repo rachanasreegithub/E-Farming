@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="shop.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <script src="cart.js" type="module"></script>
+
+</head>
+<body>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Shopping Cart</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="machines.html">Machines</a>
+                        <a href="seed.html">Seeds</a>
+                        <a href="fertilisers.html">Fertilisers</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="machine3.webp_.webp" style="width: 30%; display: block; margin: 0 auto;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="machine1.webp" style="width: 30%; display: block; margin: 0 auto;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="machine2.webp_.webp" style="width: 30%; display: block; margin: 0 auto;">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+<div class="product-container">
+    <div class="product">
+            <img src="51CVXLdoc3L._SY445_SX342_QL70_FMwebp_.webp" alt="Product Image">
+        </a>
+        <div class="details">
+            <h4>Ambrosial Agro Jai Humic Pouch(450 gram)</h4>
+            <div class="price">Rs.197</div>
+            <a href="https://www.amazon.in/Ambrosial-Agro-Humic-Pouch-gram/dp/B0C1N8SL1F/
+            ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.9vEKA3oy_EZyz6zO4Qls5qB78nT7Nrwe3QXdAEbDy99jO6h5HhV2Sr
+            P4YjBOdNCe6faNUh13N_oAyRsO2yEi4oe0oLzq9-THeWp3W7wcdPSlwNvgy1-SvhcN95qSxE34DYtbzQia_RIZi_z
+            MOxjdB1epN8LK7lUpGTvfp-7K8ewLSOteaU4TnytsnWge5l4bgZBuS_ZByD-hL24C-qOIB2sW1Uf0DCpjkrsYoXXse5
+            d7-Dvj-UoDGOqXisZJFxnJGVJjBLXB1nQzfcPAfTqYSsjVMtOTsHGLrbo4JuQHs3E.huXiiyP1rS061kHKlt9lCGyKrzu
+            ybEG3qkL4Huua39Y&dib_tag=se&keywords=Agriculture+Products&qid=1711281111&sr=8-1-spons&sp_csd=d
+            2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+    <div class="product">
+            <img src="machine1.webp" alt="Product Image">
+        </a>
+        <div class="details">
+            <h4>Balwaan Krishi BX-35B Crop Cutter 35 cc 4</h4>
+            <div class="price">Rs.197</div>
+            <a href="https://www.amazon.in/Balwaan-BX-35B-Operated-Overgrown-Harvesting/dp/B0BR5P34LN/ref=sr
+            _1_1_sspa?adgrpid=60431868873&dib=eyJ2IjoiMSJ9.ZPI7fwOLEmKY6NktBhUdq9cQZckyLdQ9V3EIH6pYrQi3TmyccsOUS
+            ZQ_qKHOdFkw1I937VkwfJVcefdpL1waDobVstXESgQiTr0SsUcCyj4alWoO9t63Ust68c5XoFhMPn4g6SnL9L5ypn0zG7_UjdWSf
+            LqVIabt639ccBIKliH8AE0xkvZVjcYahySBghXNqIqEYNPulMOgno71kHSMF5MGLsTJlhTepu3AN_ai558G4LhFGcyxUgEXgOLXln1I
+            ggimY36dL2jIsxmSDvES8wDxKSSU6sFKyGEYxvcyd4I.mFnDZf98qQitTLP_EdvBTTd_fxliWR-3qtktf7J7Ws0&dib_tag=se&ext_v
+            rnc=hi&gclid=CjwKCAjwnv-vBhBdEiwABCYQA2ADIBOXOAm_tnBgMsqVWei2nPRoApdectznV5FA98ULHNWyF0CUjhoCRoEQAvD_BwE&h
+            vadid=590593813809&hvdev=c&hvlocphy=9062122&hvnetw=g&hvqmt=b&hvrand=15669754661176047890&hvtargid=kwd-9406
+            74615820&hydadcr=24533_2265433&keywords=agricultural%2Bpro
+            ducts%2Bmachine&qid=1711287317&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+    <div class="product">
+            <img src="machine2.webp_.webp" alt="Product Image">
+        </a>
+        <div class="details">
+            <h4>Fieldmaster Electric Oprated Energizer</h4>
+            <div class="price">Rs.197</div>
+            <a href="https://www.amazon.in/Fieldmaster-Electric-Oprated-Energizer-Included/dp/B0C33SQ
+            LJL/ref=sr_1_25?adgrpid=60431868873&dib=eyJ2IjoiMSJ9.ZPI7fwOLEmKY6NktBhUdq9cQZckyLdQ9V3EIH6pY
+            rQi3TmyccsOUSZQ_qKHOdFkw1I937VkwfJVcefdpL1waDobVstXESgQiTr0SsUcCyj4alWoO9t63Ust68c5XoFhMPn4g6SnL
+            9L5ypn0zG7_UjdWSfLqVIabt639ccBIKliH8AE0xkvZVjcYahySBghXNqIqEYNPulMOgno71kHSMF5MGLsTJlhTepu3AN_ai55
+            8G4LhFGcyxUgEXgOLXln1IggimY36dL2jIsxmSDvES8wDxKSSU6sFKyGEYxvcyd4I.mFnDZf98qQitTLP_EdvBTTd_fxliWR-3q
+            tktf7J7Ws0&dib_tag=se&ext_vrnc=hi&gclid=CjwKCAjwnv-vBhBdEiwABCYQA2ADIBOXOAm_tnBgMsqVWei2nPRoApdectz
+            nV5FA98ULHNWyF0CUjhoCRoEQAvD_BwE&hvadid=590593813809&hvdev=c&hvlocphy=9062122&hvnetw=g&hvqmt=b&hvran
+            d=15669754661176047890&hvtargid=kwd-940674615820&hydadcr=24533_2265433&keywords=agricultural+products
+            +machine&qid=1711287317&sr=8-25" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+    <div class="product">
+        
+            <img src="machine3.webp_.webp" alt="Product Image">
+        </a>
+        <div class="details">
+            <h4>Agroprime Pressure Agriculture Gardening Sanitization</h4>
+            <div class="price">Rs.197</div>
+            <a href="https://www.amazon.in/Agroprime-Pressure-Agriculture-Gardening-Sanitization/dp/B0BX
+            ZXJXT5/ref=sr_1_7?dib=eyJ2IjoiMSJ9.pj0U_kqoSLRaovCH9WQmDwnw_rfGfeR_fNDnBxkKgIsYOB-8zlPy1wT09GQVa
+            CtbujOG_JpsPYyTus1U4h3a020c6wNDIolM29Nzs_U3zW-uiqUgUS0olGrYs1bdfzddC4Dtxo-cInsxuTNqut6Jg2pGkpLkm
+            CAbVrn2T6AZkKWnydsz4SG52jUi8xsgHm5fJcksE45hTMTKGymX0vBEX4xyS2yzmPJDAyWNNm5R6NjzuwMkPKGqlQN-1AVI59
+            YaZFmDjDh6nb4zgUlWtRQjEHWx9nMS4Eit7P-fVL4ec0.WS84LfCvHDPifpoof BTV3RtgVZ7Ivhp0TO0f20Cta5g&dib_tag=
+            se&keywords=Agriculture+Machine&qid=1711288118&sr=8-7" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+    <div class="product">
+        
+        <img src="fertiliser2.webp" alt="Product Image">
+    </a>
+    <div class="details">
+        <h4>Kraft Seeds by 10CLUB Vermicompost - 5kg </h4>
+        <div class="price">Rs.197</div>
+        <a href="https://www.amazon.in/Kraft-Seeds-Vermicompost-Complete-Enriched/dp/B08D8CHZ9C/ref=sr_
+        1_2_sspa?crid=1IG62XV9W5OPF&dib=eyJ2IjoiMSJ9.9vEKA3oy_EZyz6zO4Qls5qB78nT7Nrwe3QXdAEbDy99jO6h5HhV2Sr
+        P4YjBOdNCe6faNUh13N_oAyRsO2yEi4oe0oLzq9-THeWp3W7wcdPSlwNvgy1-SvhcN95qSxE34L4IAmPa5T5rwztKb6saHkQhPUBMr
+        OqBVCaXRBCS4vU8LSOteaU4TnytsnWge5l4bajpjlB8EB3kOh8KLycjD55ebdKmr0yxsZnEAr5aZYoiwJt44yIoMU-28MW2hca-D0e-
+        0-mJOrGVYbMSfmTDEyZJXc8JTeo_iG0_JMquVToQ.1Vh2uuMdD-Vix63j2guwFEnsIpwjwY4JhhQH3UHiIuU&dib_tag=se&keyword
+        s=Agriculture+Products&qid=1711289732&sprefix=agriculture+products%2Caps%2C275&sr=8-2-spons&sp_csd=d2l
+        kZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+            <button>Buy Now</button>
+        </a>
+    </div>
+</div>
+<div class="product">
+        
+    <img src="seed1.webp" alt="Product Image">
+</a>
+<div class="details">
+    <h4>SRI SAI FORESTRY Moringa Seeds PKM </h4>
+    <div class="price">Rs.197</div>
+    <a href="https://www.amazon.in/SRI-SAI-FORESTRY-Moringa-Agriculture/dp/B0CQMGJ6BZ/ref=sr_1_4?adgrpid=65807
+    036339&dib=eyJ2IjoiMSJ9.FcJKTDItUJAWU_PzSIg5pq_wKycqdqdJMDoukyy71fg4fMLltJ7OfS9CxMzSBbq8v5JI5dwlNa94yU9IDG
+    kTCve_laJbTeX8XmpAy4MnfkgOp3oB5kPM7SRZ55XijYpZmPPVTu2IEYB3FApyWhfRG86w23O5BDRlEn7TyCWm87xvoGsGW-6r_JBEyiop
+    LfGi7cbt6ViUb5co83x32f_MQZznvAlhCpq3mM5cwomr6cMG2WemId_qhOE3LKOSPWKvknwcAcW13JQyn41f8UaL2tsKNzGaoZhIcs3elj
+    W1vqg.ibFfbdAqLud8JGA-bSpo5qCvkpGwnxctfNX20qGkkc8&dib_tag=se&ext_vrnc=hi&gclid=CjwKCAjwnv-vBhBdEiwABCYQAz3i
+    ejn_QCYsSDpg2GwrPiREzcV5Ssp8MjpINWzdFnMbbGjpnIwgMBoCKUcQAvD_BwE&hvadid=590406296390&hvdev=c&hvlocphy=906212
+    2&hvnetw=g&hvqmt=b&hvrand=5664561515395307470&hvtargid=kwd-351754973887&hydadcr=16515_2163401&keywords=agr
+    iculture+seeds+online&qid=1711290323&sr=8-4">
+        <button>Buy Now</button>
+    </a>
+</div>
+</div>
+
+<div class="product">
+        
+    <img src="seeds2.webp" alt="Product Image">
+</a>
+<div class="details">
+    <h4>Srinivasa Agro Seeds Sanappu Seed</h4>
+    <div class="price">Rs.197</div>
+    <a href="https://www.amazon.in/Srinivasa-Agro-Seeds-Cultivation-Crotalaria/dp/B0C2CXNQB7/ref=sr_1_2_sspa?c
+    rid=3GL4YSOHG91OW&dib=eyJ2IjoiMSJ9.FcJKTDItUJAWU_PzSIg5pq_wKycqdqdJMDoukyy71fg4fMLltJ7OfS9CxMzSBbq8v5JI5dwl
+    Na94yU9IDGkTCve_laJbTeX8XmpAy4MnfkgOp3oB5kPM7SRZ55XijYpZBapePgaG6531gYOLa0VwTdzFiIk9gPK4jTCvtMBVSOaVifmU6qW
+    6y1MkNnEm5ejwitalwPxvHbVoVniRQrvyfqlmDLtafV5QRABSyiBAapzp1H2VXFsXZXwPPxOXjN9cckve6KaRf_gfT0_QeuH971rOjaPwqn
+    PB9CK5vIqEOPo.A2Q2oIhgo3NQSUXsEN6e7c7ZMw-ZcLD7_Q5R4ujWUlM&dib_tag=se&keywords=agriculture+seeds+online&q
+    id=1711290506&sprefix=agriculture+seeds+online%2Caps%2C221&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+        <button>Buy Now</button>
+    </a>
+</div>
+</div>
+
+<div class="product">
+        
+    <img src="seed3.webp" alt="Product Image">
+</a>
+<div class="details">
+    <h4>Eywa Farming Seeds for Sowing, Farming & Agriculture (15kg)</h4>
+    <div class="price">Rs.197</div>
+    <a href="https://www.amazon.in/Peanut-Seeds-Lepakshi-Moongfali-Peanuts/dp/B09SV32JZ1/ref=sr_1_48?crid=3GL
+    4YSOHG91OW&dib=eyJ2IjoiMSJ9.FcJKTDItUJAWU_PzSIg5pq_wKycqdqdJMDoukyy71fg4fMLltJ7OfS9CxMzSBbq8v5JI5dwlNa94y
+    U9IDGkTCve_laJbTeX8XmpAy4MnfkgOp3oB5kPM7SRZ55XijYpZBapePgaG6531gYOLa0VwTdzFiIk9gPK4jTCvtMBVSOaVifmU6qW6y1
+    MkNnEm5ejwitalwPxvHbVoVniRQrvyfqlmDLtafV5QRABSyiBAapzp1H2VXFsXZXwPPxOXjN9cckve6KaRf_gfT0_QeuH971rOjaPwqnP
+    B9CK5vIqEOPo.A2Q2oIhgo3NQSUXsEN6e7c7ZMw-ZcLD7_Q5R4ujWUlM&dib_tag=se&keywords=agriculture%2Bseeds%2Bonline&
+    qid=1711290506&sprefix=agriculture%2Bseeds%2Bonline%2Caps%2C221&sr=8-48&th=1">
+        <button>Buy Now</button>
+    </a>
+</div>
+</div>
+
+    <!-- Add more products here -->
+</div>
+
+    <!-- More product entries can be added here -->
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login - E-Farming</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 600px;
+      margin-top: 50px;
+    }
+
+    .panel {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .panel-heading {
+      background-color: #4CAF50 !important;
+      color: white !important;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .form-control {
+      border-radius: 5px;
+    }
+
+    .btn-success {
+      background-color: #4CAF50;
+      border: none;
+    }
+
+    .btn-success:hover {
+      background-color: #388E3C;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('#loginForm').on('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        var email = $('#email').val();
+        var password = $('#pwd').val();
+
+        // Retrieve user data from localStorage
+        var user = JSON.parse(localStorage.getItem('user'));
+
+        // Check if the entered credentials match the stored credentials
+        if (user && user.email === email && user.password === password) {
+          window.location.href = 'home.html'; // Redirect to home page on successful login
+        } else {
+          alert('Invalid credentials');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">E - Farming</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+        <li class="active"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading text-center">
+      <h3>Login</h3>
+    </div>
+    <div class="panel-body">
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-success btn-block">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
